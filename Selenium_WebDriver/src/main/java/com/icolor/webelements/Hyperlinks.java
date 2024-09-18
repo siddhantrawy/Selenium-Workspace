@@ -23,7 +23,7 @@ public class Hyperlinks {
 			System.out.println(element.getText());
 		}
 		
-		driver.close();
+		driver.quit();
 		
 	}
 
