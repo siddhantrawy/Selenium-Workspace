@@ -31,6 +31,17 @@ public class ReadFromExcel {
 			e.printStackTrace();
 		}
 		
+/*
+ 	The path provided (System.getProperty("user.dir") + "\\testdata\\MyData.xlsx") gives the full path to the file MyData.xlsx.
+ 	if your project is located in C:\Users\siddh\workspace\MyProject, System.getProperty("user.dir") will return that path.
+ 	The double backslashes (\\) are used to escape the backslash in a string literal in Java. A single backslash \ is a special character in Java strings, so it needs to be escaped.
+ 	
+ 	Q. Why Use System.getProperty("user.dir")?
+	   Portability: Using System.getProperty("user.dir") makes your code more flexible and portable because the path is dynamically determined based on where the program is executed. You don't have to hard-code absolute paths, which might differ on various machines or environments.
+       Relative Paths: You can work with relative paths (e.g., \\testdata\\MyData.xlsx) instead of hard-coding absolute paths. This makes your program easier to manage, especially if it is used across different systems or development environments.  
+ */
+		
+		
 		
 		// XSSFWorkbook is used to open the workbook using the file input stream.
 		// If an I/O error occurs during reading, it throws an IOException and prints the stack trace.
