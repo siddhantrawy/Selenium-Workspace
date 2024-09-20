@@ -3,6 +3,7 @@ package com.icolor.datadriven;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.attribute.UserDefinedFileAttributeView;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -25,7 +26,7 @@ public class ReadFromExcel {
 		// A FileInputStream is created to read the Excel file from the specified path (MyData.xlsx).
 		// If the file is not found, a FileNotFoundException is thrown, and the error message is printed.
 		try {
-			file = new FileInputStream("C:\\Users\\siddh\\OneDrive\\Desktop\\MyData.xlsx");
+			file = new FileInputStream(System.getProperty("user.dir")+"\\TestData\\MyData.xlsx");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
