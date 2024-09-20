@@ -26,7 +26,7 @@ public class ReadFromExcel {
 		// A FileInputStream is created to read the Excel file from the specified path (MyData.xlsx).
 		// If the file is not found, a FileNotFoundException is thrown, and the error message is printed.
 		try {
-			file = new FileInputStream(System.getProperty("user.dir")+"\\TestData\\MyData.xlsx");
+			file = new FileInputStream(System.getProperty("user.dir")+"\\testdata\\MyData.xlsx");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
