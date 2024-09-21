@@ -1,8 +1,8 @@
 package com.icolor.pageobjects;
 
 import org.openqa.selenium.WebDriver;
-
-import com.icolor.testbase.BasePage;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
 
@@ -10,4 +10,17 @@ public class HomePage extends BasePage {
 		super(driver);
 	}
 
+	@FindBy(xpath = "//span[normalize-space()='My Account']")
+	WebElement lnkMyaccount;
+
+	@FindBy(xpath = "//a[normalize-space()='Register']")
+	WebElement lnkRegister;
+
+	public void clickMyAccount() {
+		lnkMyaccount.click();
+	}
+
+	public void clickRegister() {
+		lnkRegister.click();
+	}
 }
