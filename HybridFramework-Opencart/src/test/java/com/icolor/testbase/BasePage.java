@@ -1,4 +1,4 @@
-package com.icolor.hybrid.test_base;
+package com.icolor.testbase;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

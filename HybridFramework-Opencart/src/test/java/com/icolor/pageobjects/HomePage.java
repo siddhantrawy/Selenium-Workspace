@@ -1,8 +1,8 @@
-package com.icolor.hybrid.page_objects;
+package com.icolor.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 
-import com.icolor.hybrid.test_base.BasePage;
+import com.icolor.testbase.BasePage;
 
 public class HomePage extends BasePage {
 
