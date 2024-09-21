@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseClass {
 	
-public WebDriver driver;
+public WebDriver driver = null;
 	
 	@BeforeClass
 	public void setup()
@@ -30,18 +30,21 @@ public WebDriver driver;
 	}
 	
 
+	@SuppressWarnings("deprecation")
 	public String randomeString()
 	{
 		String generatedString=RandomStringUtils.randomAlphanumeric(5);
 		return generatedString;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public String randomeNumber()
 	{
 		String generatedString=RandomStringUtils.randomNumeric(10);
 		return generatedString;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public String randomAlphaNumeric()
 	{
 		String str=RandomStringUtils.randomAlphabetic(3);

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.icolor.pageobjects.HomePage;
 import com.icolor.pageobjects.RegistrationPage;
 
-public class TC001_RegistrationTestPage extends BaseClass {
+public class RegistrationTestPage extends BaseClass {
 
 	@Test
 	public void verify_account_registration()
