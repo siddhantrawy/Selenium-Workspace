@@ -26,7 +26,7 @@ public WebDriver driver = null;
 	@AfterClass
 	public void tearDown()
 	{
-		driver.close();
+		driver.quit();
 	}
 	
 

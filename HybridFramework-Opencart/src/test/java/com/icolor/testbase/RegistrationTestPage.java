@@ -20,12 +20,12 @@ public class RegistrationTestPage extends BaseClass {
 		regpage.setFirstName(randomeString().toUpperCase());
 		regpage.setLastName(randomeString().toUpperCase());
 		regpage.setEmail(randomeString()+"@gmail.com");// randomly generated the email
-		regpage.setTelephone(randomeNumber());
+		//regpage.setTelephone(randomeNumber());
 		
 		String password=randomAlphaNumeric();
 		
 		regpage.setPassword(password);
-		regpage.setConfirmPassword(password);
+		//regpage.setConfirmPassword(password);
 		
 		regpage.setPrivacyPolicy();
 		regpage.clickContinue();

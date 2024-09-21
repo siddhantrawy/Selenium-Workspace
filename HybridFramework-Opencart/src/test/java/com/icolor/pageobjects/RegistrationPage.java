@@ -19,19 +19,19 @@ public class RegistrationPage extends BasePage {
 	@FindBy(xpath="//input[@id='input-email']") 
 	WebElement txtEmail;
 
-	@FindBy(xpath="//input[@id='input-telephone']") 
-	WebElement txtTelephone;
+//	@FindBy(xpath="//input[@id='input-telephone']") 
+//	WebElement txtTelephone;
 
 	@FindBy(xpath="//input[@id='input-password']") 
 	WebElement txtPassword;
 
-	@FindBy(xpath="//input[@id='input-confirm']") 
-	WebElement txtConfirmPassword;
+//	@FindBy(xpath="//input[@id='input-confirm']") 
+//	WebElement txtConfirmPassword;
 
 	@FindBy(xpath="//input[@name='agree']") 
 	WebElement chkdPolicy;
 
-	@FindBy(xpath="//input[@value='Continue']") 
+	@FindBy(xpath="//button[@type='submit']") 
 	WebElement btnContinue;
 
 	@FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
@@ -53,20 +53,20 @@ public class RegistrationPage extends BasePage {
 
 	}
 
-	public void setTelephone(String tel) {
-		txtTelephone.sendKeys(tel);
-
-	}
+//	public void setTelephone(String tel) {
+//		txtTelephone.sendKeys(tel);
+//
+//	}
 
 	public void setPassword(String pwd) {
 		txtPassword.sendKeys(pwd);
 
 	}
 
-	public void setConfirmPassword(String pwd) {
-		txtConfirmPassword.sendKeys(pwd);
-
-	}
+//	public void setConfirmPassword(String pwd) {
+//		txtConfirmPassword.sendKeys(pwd);
+//
+//	}
 
 	public void setPrivacyPolicy() {
 		chkdPolicy.click();
